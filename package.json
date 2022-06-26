@@ -1,24 +1,34 @@
 {
-  "name": "weather-cli",
-  "version": "1.0.0",
-  "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "./index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "cli",
-    "weather"
-  ],
-  "author": "i6nake9",
-  "license": "ISC",
-  "repository": {
-      "type": "git",
-      "url": "git.com"
-  },
-  "bugs": {
-    "url": "https://url.com",
-    "email": "fleshartemka@gmail.com"
-  }
+	"name": "weather-cli",
+	"version": "1.0.0",
+	"description": "CLI for getting weather",
+	"main": "weather.js",
+	"bin": {
+		"weather": "weather.js"
+	},
+	"type": "module",
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"cli",
+		"weather"
+	],
+	"author": "Anton Larichev",
+	"license": "ISC",
+	"homepage": "https://purpleschool.ru",
+	"repository": {
+		"type": "git",
+		"url": "https://purpleschool.ru"
+	},
+	"bugs": {
+		"url": "https://purpleschool.ru",
+		"email": "antonlarichev@gmail.com"
+	},
+	"dependencies": {
+		"axios": "^0.21.4",
+		"chalk": "^4.1.2",
+		"dedent-js": "^1.0.1"
+	}
 }
